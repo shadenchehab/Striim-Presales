@@ -161,6 +161,35 @@ body {
   margin-top: 12px;
 }
 
+.automation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.automation-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fffef5 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.automation-card h4 {
+  margin: 0 0 6px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.9rem;
+  color: var(--indigo);
+  letter-spacing: -0.01em;
+}
+
+.automation-card p {
+  margin: 0;
+  font-size: 0.79rem;
+  color: var(--text-body);
+  line-height: 1.45;
+}
+
 .card--future {
   background: #f3f4f6;
   border-color: #d1d5db;
