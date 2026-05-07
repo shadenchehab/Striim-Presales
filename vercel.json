@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/striim_cs_pages_index.html"
+    },
+    {
+      "source": "/hybrid",
+      "destination": "/striim_support_assist_and_automation_with_zendesk.html"
+    },
+    {
+      "source": "/replacement",
+      "destination": "/striim_zendesk_replacement_view.html"
+    }
+  ]
+}
