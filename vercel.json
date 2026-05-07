@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/striim_cs_pages_index.html"
+      "destination": "/index.html"
     },
     {
       "source": "/hybrid",
