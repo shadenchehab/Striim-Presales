@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Striim - Zendesk Replacement View</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./striim-cs-styles.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a class="btn" href="./striim_cs_pages_index.html">Home</a>
+      <a class="btn" href="./striim_support_assist_and_automation_with_zendesk.html">Go to Hybrid Assist Page</a>
+    </nav>
+
+    <section class="hero">
+      <h1 class="title">Zendesk Replacement View (Future-State Planning)</h1>
+      <p class="subtitle">
+        CS planning page for a potential full replacement after hybrid validation.
+        This captures what must be true before Striim can safely move from parallel mode to full DevRev-first support.
+      </p>
+      <div class="meta">
+        <span class="chip">Target State: Full Platform Replacement</span>
+        <span class="chip warn">Current State: Zendesk renewed for 12 months</span>
+        <span class="chip risk">Gate: Legal, feature parity, migration confidence</span>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h3 class="section-heading">Why this page exists</h3>
+        <ul>
+          <li>Hybrid evaluation is active; replacement is not immediate.</li>
+          <li>CS needs a forward plan to convert validated hybrid wins into replacement readiness.</li>
+          <li>This page reframes all gathered requirements through a cutover lens.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3 class="section-heading">Support Tier Model for Full Replacement</h3>
+        <ul>
+          <li><span class="kbd">T1</span>: First-line customer support, AI-assisted responses, intake and triage.</li>
+          <li><span class="kbd">T2</span>: Complex troubleshooting, escalations management, workflow ownership.</li>
+          <li><span class="kbd">T3</span>: <strong>Engineering</strong> via JIRA-linked escalations and RCA automation.</li>
+        </ul>
+      </article>
+    </section>
+
+    <details open>
+      <summary>Current Position vs Replacement Target</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Current (Hybrid)</th>
+              <th>Target (Replacement)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Primary Support System</td>
+              <td>Zendesk remains core during evaluation</td>
+              <td>DevRev becomes system of record for support operations</td>
+            </tr>
+            <tr>
+              <td>Data Movement</td>
+              <td>Bidirectional sync for new/updated objects</td>
+              <td>Direct operations in DevRev + controlled Zendesk deprecation plan</td>
+            </tr>
+            <tr>
+              <td>Decision Driver</td>
+              <td>Boolean feature checks and team confidence</td>
+              <td>Parity + reliability + compliance + cost proof for full cutover</td>
+            </tr>
+            <tr>
+              <td>Legal Position</td>
+              <td>BAA/legal review still gating PHI path</td>
+              <td>Signed BAA and operational compliance controls in production</td>
+            </tr>
+            <tr>
+              <td>Timeline Pressure</td>
+              <td>Renewal date defines evaluation window</td>
+              <td>Replacement decision before/at next commercial decision point</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Replacement Readiness Gates (Must Pass)</summary>
+      <div class="content">
+        <ol>
+          <li>BAA fully executed and all HIPAA/PHI restrictions validated in production workflows.</li>
+          <li>Critical workflow parity complete for 20-30 Zendesk triggers (including role/time logic).</li>
+          <li>Zendesk/JIRA integration stability proven under real volume with no major data integrity gaps.</li>
+          <li>Unified timeline requirement resolved (native solution or accepted workaround).</li>
+          <li>Chat widget fully activated and adopted in Striim production environment.</li>
+          <li>UAT boolean checklist passes at agreed threshold (<span class="kbd">[ TBD ]</span> threshold owner: Jason/leadership).</li>
+          <li>Support team readiness across T1/T2/T3 with training and operational runbooks.</li>
+          <li>Commercial model validated (license counts, AI action forecast, dual-stack cost-to-single-stack path).</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>Requirement Buckets for Full Replacement (Carry-over + Net-New)</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Bucket</th>
+              <th>Carry-over from Hybrid</th>
+              <th>Net-New for Replacement Completion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ticketing Core</td>
+              <td>CSAT, assignment, ticket automation, exports, role-based handling, SLA tracking</td>
+              <td>Final operating model when Zendesk queue ownership shifts fully to DevRev</td>
+            </tr>
+            <tr>
+              <td>Workflow Automation</td>
+              <td>20-30 trigger migration, time-based flows, status logic, routing automation</td>
+              <td>Formal parity sign-off and fallback procedures for failed automations</td>
+            </tr>
+            <tr>
+              <td>AI Agent Layer</td>
+              <td>Search, summarization, KB generation, RCA templates, escalation agents</td>
+              <td>Deflection governance, confidence thresholds, production guardrails by tier</td>
+            </tr>
+            <tr>
+              <td>Integrations</td>
+              <td>JIRA bi-directional, email routing, docs indexing, Zendesk sync in transition</td>
+              <td>Zendesk decommission sequencing and post-cutover integration simplification</td>
+            </tr>
+            <tr>
+              <td>Data Strategy</td>
+              <td>Sync of new/updated data during hybrid period</td>
+              <td>Historical migration strategy if required (<span class="kbd">[ TBD ]</span>, currently out-of-scope)</td>
+            </tr>
+            <tr>
+              <td>Governance</td>
+              <td>RACI, weekly cadence, CS ownership handoff</td>
+              <td>Executive sign-off framework for full replacement go/no-go</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>What We Heard + What We Tried (Mapped to Replacement Impact)</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Signal</th>
+              <th>Source</th>
+              <th>Replacement Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strong AI value perception over Zendesk AI</td>
+              <td>Team feedback + POC outcomes</td>
+              <td>Supports replacement case if reliability and governance are proven at scale.</td>
+            </tr>
+            <tr>
+              <td>Summarization and internal search highly valued</td>
+              <td>POC demonstrations</td>
+              <td>High leverage for T1/T2 efficiency and faster resolution cycles.</td>
+            </tr>
+            <tr>
+              <td>Unified timeline is still unresolved</td>
+              <td>Discovery concern / open question</td>
+              <td>Potential adoption blocker for day-to-day support workflow quality.</td>
+            </tr>
+            <tr>
+              <td>BAA/legal process still active</td>
+              <td>Security/legal sessions</td>
+              <td>Hard gate; replacement cannot proceed without completion.</td>
+            </tr>
+            <tr>
+              <td>Trigger migration complexity unknown until full inventory arrives</td>
+              <td>Scope/dependency docs</td>
+              <td>Primary execution risk for parity and timeline confidence.</td>
+            </tr>
+            <tr>
+              <td>Chat widget blocked in trial</td>
+              <td>POC findings</td>
+              <td>Must prove production activation to support customer-facing replacement motion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>Proposed Replacement Migration Path (CS Working Draft)</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Goal</th>
+              <th>Exit Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phase A: Hybrid Hardening</td>
+              <td>Close open dependencies and validate all critical feature behaviors</td>
+              <td>BAA signed, trigger map complete, key UAT checks passing</td>
+            </tr>
+            <tr>
+              <td>Phase B: Controlled Shift</td>
+              <td>Move defined ticket cohorts/channels to DevRev-first operations</td>
+              <td>No severe sync issues, team adoption by T1/T2/T3, stable SLA reporting</td>
+            </tr>
+            <tr>
+              <td>Phase C: Replacement Decision</td>
+              <td>Leadership go/no-go based on validated scorecard and commercial model</td>
+              <td>Executive approval + cutover plan + rollback plan approved</td>
+            </tr>
+            <tr>
+              <td>Phase D: Zendesk Decommission Plan</td>
+              <td>Retire/reduce Zendesk footprint in controlled manner</td>
+              <td>Data retention/export policy finalized and operational ownership transferred</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>Dependencies, Unknowns, and Placeholders ([ TBD ])</summary>
+      <div class="content">
+        <ul>
+          <li>Go/no-go threshold for feature pass rate: <span class="kbd">[ TBD ]</span>.</li>
+          <li>Unified timeline final resolution and delivery commitment: <span class="kbd">[ TBD ]</span>.</li>
+          <li>Historical migration need and scope (if required for replacement): <span class="kbd">[ TBD ]</span>.</li>
+          <li>Final license model by role (Ultimate vs Basic/Collaborator): <span class="kbd">[ TBD ]</span>.</li>
+          <li>Monthly ticket and chat volume baseline for AI action forecasting: <span class="kbd">[ TBD ]</span>.</li>
+          <li>Replacement budget model vs continued Zendesk + AI add-on path: <span class="kbd">[ TBD ]</span>.</li>
+          <li>CSM assignee, implementation engineer assignee, final RACI ownership: <span class="kbd">[ TBD ]</span>.</li>
+          <li>Final legal timeline and BAA completion date: <span class="kbd">[ TBD ]</span>.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Out-of-Scope Items That Become Relevant for True Replacement</summary>
+      <div class="content">
+        <ul>
+          <li>Historical data migration (currently excluded in hybrid SOW) may need a dedicated follow-on project.</li>
+          <li>Zendesk decommission execution and long-term admin transition are not in current implementation scope.</li>
+          <li>Any custom development beyond standard platform capabilities requires separate approval and scoping.</li>
+          <li>Additional integrations not currently required (Salesforce/Slack/Confluence) remain excluded unless business needs change.</li>
+          <li>Organizational change-management consulting remains separate from baseline implementation services.</li>
+        </ul>
+      </div>
+    </details>
+  </main>
+</body>
+</html>

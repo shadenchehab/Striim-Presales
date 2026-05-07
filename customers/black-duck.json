@@ -1,0 +1,99 @@
+{
+  "customer": "Black Duck",
+  "disableCardClicks": true,
+  "widgetAppId": "DvRvStPZG9uOmNvcmU6ZHZydi11cy0xOmRldm8vMWU2NFBhRGdpaTpwbHVnX3NldHRpbmcvMV9ffHxfXzIwMjYtMDItMTEgMTU6MzU6MjAuMTE0NjQ3NTk2ICswMDAwIFVUQw==xlxendsDvRv",
+  "heroSubtitle": "AI-powered support for software composition analysis and application security. Get instant answers on vulnerabilities, license compliance, and software supply-chain risk — without the wait.",
+  "howItWorksNote": "Click the chat widget in the bottom right to try it out.",
+  "questions": [
+    {
+      "title": "Developers & Security Engineers",
+      "items": [
+        "How do I run a Black Duck Detect scan on my project, and what scan modes are available for source code vs. binaries?",
+        "How can I integrate Black Duck scanning into my GitHub Actions or Jenkins CI/CD pipeline to enforce policy on every pull request?",
+        "What is the difference between package manager scanning, signature scanning, and snippet scanning, and when should I use each?",
+        "How do I interpret a Bill of Materials (BOM) report, and how are direct vs. transitive dependencies distinguished?",
+        "A new CVE was published affecting a library in our codebase—how do I find all affected projects and prioritize remediation?",
+        "How does Black Duck handle container image scanning, and what registries and runtimes are supported?",
+        "How can I scan for open source AI models (e.g., from Hugging Face) embedded in our projects and assess their licensing risks?",
+        "What steps should I follow to set up an air-gapped (offline) Detect scan in an environment with no internet access?",
+        "How do I configure scan exclusions to skip test directories or vendored code that shouldn't be included in risk reports?",
+        "How can I match a detected code snippet back to its original open source project to confirm whether it introduces a license obligation?"
+      ]
+    },
+    {
+      "title": "AppSec, Compliance & Operations",
+      "items": [
+        "How do I create and enforce security and license compliance policies that automatically fail builds when critical violations are detected?",
+        "How can I generate and export an SBOM in SPDX or CycloneDX format to satisfy customer or regulatory requirements?",
+        "How does Black Duck map vulnerabilities to the NVD, and what are Black Duck Security Advisories (BDSAs) and why do they appear before NVD entries?",
+        "How do I manage roles and permissions for teams across multiple projects, and what built-in roles are available?",
+        "How can I configure notifications and alerts so that the right team members are informed when a newly reported vulnerability affects a production application?",
+        "What data retention and audit logging capabilities does Black Duck provide to support compliance and forensic investigations?",
+        "How does Black Duck support compliance with standards like NIST SSDF, the EU Cyber Resilience Act, or EO 14028 software supply chain requirements?",
+        "How do I use the Black Duck API to extract vulnerability and license data for custom dashboards or third-party reporting tools?",
+        "How is Black Duck deployed on-premises vs. as a SaaS solution, and what are the infrastructure and scalability considerations for large codebases?",
+        "How can I monitor newly discovered open source license obligations across the portfolio and track which components require legal review before release?"
+      ]
+    }
+  ],
+  "problems": [
+    {
+      "title": "Support Automation at Scale",
+      "description": "Today every L1 and L2 ticket requires human intervention. Computer automatically triages incoming cases, summarizes prior interactions, suggests resolutions, and closes routine tickets — without a human in the loop. Your team handles more, faster, with the same headcount.",
+      "stat": "Auto-resolve L1/L2 tickets — no human required",
+      "icon": "🤖"
+    },
+    {
+      "title": "Siloed Case & Doc Context",
+      "description": "Customer case history lives in Salesforce Community, documentation is indexed in Coveo, and engineering tickets sit in Jira — with no unified layer connecting them. Computer brings all three together so support agents have full context on every interaction, without switching tools.",
+      "stat": "Salesforce Community + Coveo + Jira — disconnected",
+      "icon": "📋"
+    },
+    {
+      "title": "No/Low-Code Workflow Automation",
+      "description": "Black Duck's support users aren't coders — and every automation tool they've evaluated eventually lands them in LangChain or LangGraph. Computer lets technical teams set it up, then hands ownership to non-coders to run, adjust, and scale workflows without engineering involvement.",
+      "stat": "Non-coders must be able to own the process",
+      "icon": "🔧"
+    },
+    {
+      "title": "Scaling Under PE Ownership",
+      "description": "PE ownership is driving Black Duck to improve headcount ratios and reduce operational cost — without sacrificing service quality. Computer automates L1/L2 resolution, summarizes prior cases, and enables the support team to handle more volume with the same headcount.",
+      "stat": "PE pushing hard on AI automation ROI",
+      "icon": "📈"
+    }
+  ],
+  "videoUrl": "https://youtu.be/9WdGlaAQYA8",
+  "videoThumbnail": "https://img.youtube.com/vi/9WdGlaAQYA8/hqdefault.jpg",
+  "learnMoreUrl": "https://devrev.ai/support",
+  "livePanel": {
+    "title": "Try Computer Live",
+    "subtitle": "Launch an interactive CX Agent session directly from this page to explore real conversational workflows.",
+    "ctaLabel": "LAUNCH EX AGENT",
+    "url": "https://app.devrev.ai/blackduckdemo/computer",
+    "videoEmbedUrl": "https://www.youtube.com/embed/Q_mLzHcz59I"
+  },
+  "stories": [
+    {
+      "title": "BILL transforms with DevRev's AI platform, saving $5M while improving customer experience",
+      "image": "/assets/blackduck-bill.png",
+      "url": "https://devrev.ai/customers/bill"
+    },
+    {
+      "title": "Phenom transforms talent experience with streamlined support and development workflows",
+      "image": "/assets/blackduck-phenom.png",
+      "url": "https://devrev.ai/customers/phenom"
+    },
+    {
+      "title": "From 30% to 5% overhead: Skedulo streamlines support with DevRev",
+      "image": "/assets/blackduck-skedulo.png",
+      "url": "https://devrev.ai/customers/skedulo"
+    },
+    {
+      "title": "FOSSA’s unified support strategy for elevated customer experience",
+      "image": "/assets/blackduck-fossa.png",
+      "url": "https://devrev.ai/customers/fossa"
+    }
+  ],
+  "contactEmail": "Nate.Beck@devrev.ai",
+  "contactWhatsApp": "12487678402"
+}

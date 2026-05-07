@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Striim - Support Assist Agent + Automation with Zendesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./striim-cs-styles.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="top-nav">
+      <a class="btn" href="./striim_cs_pages_index.html">Home</a>
+      <a class="btn" href="./striim_zendesk_replacement_view.html">Go to Zendesk Replacement Page</a>
+    </nav>
+
+    <section class="hero">
+      <h1 class="title">Support Assist Agent + Automation with Zendesk (Hybrid)</h1>
+      <p class="subtitle">
+        CS handoff view based on what Striim shared and what DevRev validated in POC sessions.
+        This page assumes Zendesk remains the core support platform during the evaluation period.
+      </p>
+      <div class="meta">
+        <span class="chip">Model: Hybrid (DevRev + Zendesk)</span>
+        <span class="chip ok">Evaluation Window: 6-12 months</span>
+        <span class="chip warn">Zendesk Renewal: Oct 28, 2026</span>
+        <span class="chip risk">Blocker: BAA / legal approval</span>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h3 class="section-heading">Operating Model Snapshot</h3>
+        <ul>
+          <li>Current decision: re-sign Zendesk for 12 months while evaluating DevRev AI capabilities in parallel.</li>
+          <li>Primary goal: improve support outcomes using AI (chat, summarization, routing, KB, RCA automation).</li>
+          <li>Customer channels remain Zendesk-first during hybrid; chat widget adds in-app support path.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3 class="section-heading">Support Tiers (Requested)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Role in Hybrid Model</th>
+              <th>Primary System</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="kbd">T1</span></td>
+              <td>Initial triage, first response drafts, chatbot-assisted handling, basic workflow execution</td>
+              <td>Zendesk + DevRev assist features</td>
+            </tr>
+            <tr>
+              <td><span class="kbd">T2</span></td>
+              <td>Advanced troubleshooting, summary review, KB enrichment, cross-system coordination</td>
+              <td>Zendesk + DevRev copilots/workflows</td>
+            </tr>
+            <tr>
+              <td><span class="kbd">T3</span></td>
+              <td><strong>Engineering escalation layer</strong> (JIRA-linked issues, RCA templates: SCCA/PFA/cloud)</td>
+              <td>JIRA + synced ticket context from DevRev/Zendesk</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <details open>
+      <summary>What We Heard From Striim (Pain Points and Business Drivers)</summary>
+      <div class="content">
+        <ul>
+          <li>Zendesk AI is viewed as underwhelming; strong interest in AI-first support capabilities.</li>
+          <li>Agents spend 4+ hours reading logs/threads; 200+ message conversations need summarization.</li>
+          <li>Need in-app support via chat widget; trial environment currently blocked for widget activation.</li>
+          <li>Need parity for 20-30 existing Zendesk triggers with role/time-based automation behavior.</li>
+          <li>Need better support-engineering loop through JIRA escalations and standard RCA templates.</li>
+          <li>Need a unified timeline (public + internal comments together) similar to JIRA/Zendesk "All" style.</li>
+          <li>Legal/compliance concern is high: BAA required, HIPAA handling constraints, data boundaries review.</li>
+          <li>Decision pressure tied to Zendesk renewal timeline and budget impact of dual-platform period.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary>What Was Tried / Validated in POC (And What Was Not Fully Validated)</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Capability</th>
+              <th>POC Result</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI chat over Striim docs</td>
+              <td><span class="chip ok">Demonstrated</span></td>
+              <td>Example question ("schema evolution") answered correctly from indexed docs.</td>
+            </tr>
+            <tr>
+              <td>Conversation summarization</td>
+              <td><span class="chip ok">Demonstrated</span></td>
+              <td>5-bullet summaries for long threads validated.</td>
+            </tr>
+            <tr>
+              <td>JIRA bidirectional sync</td>
+              <td><span class="chip ok">Demonstrated</span></td>
+              <td>Manual trigger shown; automation path possible.</td>
+            </tr>
+            <tr>
+              <td>AI escalation to human ticket</td>
+              <td><span class="chip ok">Demonstrated</span></td>
+              <td>Conversation history preserved and linked.</td>
+            </tr>
+            <tr>
+              <td>Agent co-pilot/internal assist</td>
+              <td><span class="chip ok">Demonstrated</span></td>
+              <td>Drafting/search support for agents validated.</td>
+            </tr>
+            <tr>
+              <td>Zendesk bidirectional sync</td>
+              <td><span class="chip warn">Partially validated</span></td>
+              <td>Discussed as standard capability; not fully demonstrated end-to-end in POC.</td>
+            </tr>
+            <tr>
+              <td>Widget in Striim environment</td>
+              <td><span class="chip warn">Blocked in trial</span></td>
+              <td>Needs production enablement checks.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>Critical Blockers, Compliance, Security, and Legal</summary>
+      <div class="content">
+        <ul>
+          <li><strong>BAA execution is mandatory</strong> before PHI can be processed; legal review is ongoing with external counsel.</li>
+          <li>Email restriction under BAA: notifications cannot include ticket description/body; only subject and customer name.</li>
+          <li>Need final BAA terms and any additional feature restrictions (<span class="kbd">[ TBD ]</span>).</li>
+          <li>Security architecture notes captured: AWS-hosted platform, customer-partitioned data plane, encryption at rest/in transit, RBAC/MFA/SAML/OAuth support.</li>
+          <li>Data boundary concerns addressed in sessions: LLM hosting and vector store described as internal/proprietary; no customer-data model training (RAG retrieval).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>In-Scope Requirements for Hybrid Assist + Automation</summary>
+      <div class="content">
+        <p class="small">
+          Consolidated from requirement docs and SOW. Status labels indicate current understanding from pre-sales and POC.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Requirement Set</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ticketing</td>
+              <td>CSAT on close, team assignment, dashboard/filter standards, custom dashboards, auto-assignment, ticket field automation, CSV/XLS export</td>
+              <td><span class="chip ok">Exists</span></td>
+            </tr>
+            <tr>
+              <td>Workflow Automation</td>
+              <td>Event/time triggers, role-based status logic, reminder/pending/auto-close actions, Zendesk trigger migration</td>
+              <td><span class="chip warn">Exists + Striim input required</span></td>
+            </tr>
+            <tr>
+              <td>Integrations</td>
+              <td>JIRA bi-directional, Zendesk bi-directional, email-to-ticket and routing, docs indexing</td>
+              <td><span class="chip ok">Critical</span></td>
+            </tr>
+            <tr>
+              <td>AI Agents</td>
+              <td>Computer fo Support KB creation, internal search, summarization, RCA template automation, smart routing, JIRA issue visibilty, support escalation agent, recomendation.</td>
+              <td><span class="chip ok">Included (7 agents)</span></td>
+            </tr>
+            <tr>
+              <td>Customer Experience</td>
+              <td>Customer portal, chat widget, chat-to-ticket escalation, widget behavior/branding config</td>
+              <td><span class="chip ok">Included</span> + <span class="chip warn">widget specs needed</span></td>
+            </tr>
+            <tr>
+              <td>Customization</td>
+              <td>Custom attributes, custom portal form fields, Zendesk custom field mapping</td>
+              <td><span class="chip ok">Supported</span> + <span class="chip warn">field list needed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>Boolean UAT Feature Checklist (Works / Does Not Work)</summary>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Success Definition</th>
+              <th>Current Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>AI Chat Widget</td><td>Loads in Striim app, accurate doc responses, context preserved</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Conversation Summarization</td><td>200+ messages summarized to 5 bullets accurately</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Workflow Automation</td><td>Auto-reply, role-based status, time actions execute correctly</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Zendesk Bidirectional Sync</td><td>Zendesk↔DevRev sync without data loss</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>JIRA Bidirectional Sync</td><td>Issue links, comments, status sync both directions</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Escalation to Human</td><td>AI creates routed ticket with full history</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Smart Routing</td><td>Correct routing based on role/metadata</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>KB Article Creation</td><td>Reviewable AI draft can be published</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>CSAT Survey</td><td>Triggers on close, delivers, and tracks responses</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Internal Search Agent</td><td>Relevant results with acceptable speed (&lt;5s target)</td><td><span class="chip ok">Works</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>Dependencies and Missing Inputs from Striim (For Discovery)</summary>
+      <div class="content">
+        <ul>
+          <li>Full Zendesk trigger inventory (name, condition, action, priority).</li>
+          <li>Time intervals and SLA definitions (first response, response, resolution, tier-based SLA).</li>
+          <li>Widget branding and behavior specs (logo/colors/copy/placement/auto-open behavior).</li>
+          <li>Custom field inventory (field type, validation, usage mapping).</li>
+          <li>Email routing and auto-assignment rules; auto-reply templates.</li>
+          <li>RCA template field schemas for SCCA/PFA/cloud workflows.</li>
+          <li>License counts and expected monthly ticket/conversation volume for AI action estimation.</li>
+          <li>Workspace name, final team titles, and any contact detail gaps marked <span class="kbd">[ TBD ]</span>.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Out-of-Scope for This Hybrid Assist Phase</summary>
+      <div class="content">
+        <ul>
+          <li>Salesforce, Slack, Confluence integrations and non-listed external sources.</li>
+          <li>Custom code-heavy feature development beyond standard configuration path.</li>
+          <li>Third-party system administration ownership (Zendesk/JIRA/email server ops remain with Striim).</li>
+          <li>Extensive custom training programs beyond standard enablement delivery.</li>
+          <li>Broader change-management consulting and executive reporting beyond standard CSM cadence.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Open Questions / Placeholders to Close</summary>
+      <div class="content">
+        <ul>
+          <li>Final BAA terms and complete list of BAA-induced feature restrictions: <span class="kbd">[ TBD ]</span>.</li>
+          <li>Widget activation path in Striim production and any deployment blockers: <span class="kbd">[ TBD ]</span>.</li>
+        </ul>
+      </div>
+    </details>
+  </main>
+</body>
+</html>
