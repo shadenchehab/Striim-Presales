@@ -100,12 +100,12 @@
           </thead>
           <tbody>
             <tr>
-              <td>AI chat over Striim docs</td>
+              <td>Computer AI Conversational Interface</td>
               <td><span class="chip ok">Demonstrated</span></td>
-              <td>Example question ("schema evolution") answered correctly from indexed docs.</td>
+              <td>Example question ("How we solved this ticket?") answered correctly from indexed docs.</td>
             </tr>
             <tr>
-              <td>Conversation summarization</td>
+              <td>Ticket summarization</td>
               <td><span class="chip ok">Demonstrated</span></td>
               <td>5-bullet summaries for long threads validated.</td>
             </tr>
@@ -114,11 +114,7 @@
               <td><span class="chip ok">Demonstrated</span></td>
               <td>Manual trigger shown; automation path possible.</td>
             </tr>
-            <tr>
-              <td>AI escalation to human ticket</td>
-              <td><span class="chip ok">Demonstrated</span></td>
-              <td>Conversation history preserved and linked.</td>
-            </tr>
+         
             <tr>
               <td>Agent co-pilot/internal assist</td>
               <td><span class="chip ok">Demonstrated</span></td>
@@ -129,28 +125,13 @@
               <td><span class="chip warn">Partially validated</span></td>
               <td>Discussed as standard capability; not fully demonstrated end-to-end in POC.</td>
             </tr>
-            <tr>
-              <td>Widget in Striim environment</td>
-              <td><span class="chip warn">Blocked in trial</span></td>
-              <td>Needs production enablement checks.</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
     </details>
 
-    <details>
-      <summary>Critical Blockers, Compliance, Security, and Legal</summary>
-      <div class="content">
-        <ul>
-          <li><strong>BAA execution is mandatory</strong> before PHI can be processed; legal review is ongoing with external counsel.</li>
-          <li>Email restriction under BAA: notifications cannot include ticket description/body; only subject and customer name.</li>
-          <li>Need final BAA terms and any additional feature restrictions (<span class="kbd">[ TBD ]</span>).</li>
-          <li>Security architecture notes captured: AWS-hosted platform, customer-partitioned data plane, encryption at rest/in transit, RBAC/MFA/SAML/OAuth support.</li>
-          <li>Data boundary concerns addressed in sessions: LLM hosting and vector store described as internal/proprietary; no customer-data model training (RAG retrieval).</li>
-        </ul>
-      </div>
-    </details>
+
 
     <details>
       <summary>In-Scope Requirements for Hybrid Assist + Automation</summary>
@@ -169,7 +150,7 @@
           <tbody>
             <tr>
               <td>Ticketing</td>
-              <td>CSAT on close, team assignment, dashboard/filter standards, custom dashboards, auto-assignment, ticket field automation, CSV/XLS export</td>
+              <td> team assignment, dashboard/filter standards, custom dashboards, auto-assignment, ticket field automation, CSV/XLS export</td>
               <td><span class="chip ok">Exists</span></td>
             </tr>
             <tr>
@@ -183,18 +164,14 @@
               <td><span class="chip ok">Critical</span></td>
             </tr>
             <tr>
-              <td>AI Agents</td>
+              <td>AI Agent/Skills and Automations</td>
               <td>Computer fo Support KB creation, internal search, summarization, RCA template automation, smart routing, JIRA issue visibilty, support escalation agent, recomendation.</td>
-              <td><span class="chip ok">Included (7 agents)</span></td>
+              <td><span class="chip ok">TBD)</span></td>
             </tr>
+            
             <tr>
-              <td>Customer Experience</td>
-              <td>Customer portal, chat widget, chat-to-ticket escalation, widget behavior/branding config</td>
-              <td><span class="chip ok">Included</span> + <span class="chip warn">widget specs needed</span></td>
-            </tr>
-            <tr>
-              <td>Customization</td>
-              <td>Custom attributes, custom portal form fields, Zendesk custom field mapping</td>
+              <td>zendesk Configuration</td>
+              <td>Custom attributes to be created on the ZD ticket, Zendesk Custom field mapping like </td>
               <td><span class="chip ok">Supported</span> + <span class="chip warn">field list needed</span></td>
             </tr>
           </tbody>
@@ -216,7 +193,7 @@
             <p>Auto-assignment, ticket field updates, and status updates across the ticket lifecycle.</p>
           </article>
           <article class="automation-card">
-            <h4>CSAT Automation</h4>
+            <h4>Customer Satisfaction/CSAT Automation</h4>
             <p>Survey trigger on close with delivery and response tracking.</p>
           </article>
           <article class="automation-card">
@@ -224,17 +201,11 @@
             <p>Smart routing based on role and metadata with email routing support.</p>
           </article>
           <article class="automation-card">
-            <h4>Auto-Reply Automation</h4>
-            <p>Template-based automated responses for standard support interactions.</p>
+            <h4>Draft-Reply Automation</h4>
+            <p>Template-based draft responses for standard support interactions.</p>
           </article>
-          <article class="automation-card">
-            <h4>Chat-to-Ticket Automation</h4>
-            <p>Customer chat and widget interactions escalated into ticket workflows.</p>
-          </article>
-          <article class="automation-card">
-            <h4>Escalation Automation</h4>
-            <p>AI escalation to human ticket with support escalation agent behavior and preserved context.</p>
-          </article>
+      
+        
           <article class="automation-card">
             <h4>Summarization Automation</h4>
             <p>Long thread summarization for faster triage and handoff.</p>
@@ -271,16 +242,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>AI Chat Widget</td><td>Loads in Striim app, accurate doc responses, context preserved</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>Conversation Summarization</td><td>200+ messages summarized to 5 bullets accurately</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>Workflow Automation</td><td>Auto-reply, role-based status, time actions execute correctly</td><td><span class="chip ok">Works</span></td></tr>
+
+            <tr><td>Conversation Summarization Field </td><td> When Routing to L2/L3 200+ messages summarized to 5 bullets accurately</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Workflow Automation</td><td> Macro Draft-Response, Rout to Correct Owner, Recommended Next Steps on this Ticket </td><td><span class="chip ok">Works</span></td></tr>
             <tr><td>Zendesk Bidirectional Sync</td><td>Zendesk↔DevRev sync without data loss</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>JIRA Bidirectional Sync</td><td>Issue links, comments, status sync both directions</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>Escalation to Human</td><td>AI creates routed ticket with full history</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>JIRA Bidirectional Sync</td><td>Issue links, comments, status sync both directions , No Ticket Creation in Jira </td><td><span class="chip ok">Works</span></td></tr>
+        
             <tr><td>Smart Routing</td><td>Correct routing based on role/metadata</td><td><span class="chip ok">Works</span></td></tr>
             <tr><td>KB Article Creation</td><td>Reviewable AI draft can be published</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>CSAT Survey</td><td>Triggers on close, delivers, and tracks responses</td><td><span class="chip ok">Works</span></td></tr>
-            <tr><td>Internal Search Agent</td><td>Relevant results with acceptable speed (&lt;5s target)</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>CSAT Survey/Customer Satisfaction </td><td>Triggers on close, delivers, and tracks responses</td><td><span class="chip ok">Works</span></td></tr>
+            <tr><td>Internal Search Agent[Computer]</td><td>Relevant results with acceptable speed (&lt;5s target)</td><td><span class="chip ok">Works</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -291,9 +262,10 @@
       <div class="content">
         <ul>
           <li>Full Zendesk trigger inventory (name, condition, action, priority).</li>
+          <li>Confirm with Strrim Team Where is Their KBs</li>
           <li>Time intervals and SLA definitions (first response, response, resolution, tier-based SLA).</li>
-          <li>Widget branding and behavior specs (logo/colors/copy/placement/auto-open behavior).</li>
-          <li>Custom field inventory (field type, validation, usage mapping).</li>
+          
+          <li>Custom field inventory for DevRev to Use in Zendesk (field type, validation, usage mapping).</li>
           <li>Email routing and auto-assignment rules; auto-reply templates.</li>
           <li>RCA template field schemas for SCCA/PFA/cloud workflows.</li>
           <li>License counts and expected monthly ticket/conversation volume for AI action estimation.</li>
@@ -315,15 +287,7 @@
       </div>
     </details>
 
-    <details>
-      <summary>Open Questions / Placeholders to Close</summary>
-      <div class="content">
-        <ul>
-          <li>Final BAA terms and complete list of BAA-induced feature restrictions: <span class="kbd">[ TBD ]</span>.</li>
-          <li>Widget activation path in Striim production and any deployment blockers: <span class="kbd">[ TBD ]</span>.</li>
-        </ul>
-      </div>
-    </details>
+   
   </main>
 </body>
 </html>
